@@ -1,0 +1,21 @@
+<table class="table">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Date of creation</td>
+        <td>Action</td>
+    </tr>
+    {{#each dao.database}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+        <td>{{dateCreation}}</td>
+        <td>
+            <button data-id="{{id}}">Update</button>
+            <button data-id="{{id}}">Delete</button>
+        </td>
+    </tr>
+    {{/each}}
+</table>
